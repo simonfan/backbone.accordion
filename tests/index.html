@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Module boilerplate</title>
+	
+	<!-- Set a script tag to define unit as FALSE, so that the demo page is run -->
+	<script type="text/javascript">
+		window.__unit = false;
+		window.__demo = true;
+	</script>
+
+	<script type="text/javascript" data-main="main.js" src="components/requirejs/require.js"></script>
+
+
+	<style type="text/css">
+		.accordion-wrapper a {
+			display: block;
+		}
+		.accordion-frame {
+			max-width: 200px;
+			overflow: hidden;
+		}
+		.accordion-content {
+			margin: 0 0;
+
+			background-color: red;
+		}
+	</style>
+	
+</head>
+
+<body>
+
+	<div class="accordion-wrapper">
+
+		<div class="accordion-content">
+
+			<a href="#">First</a>
+			<div id="first" class="accordion-frame">
+				<ul class="accordion-content">
+					<li>Item1</li>
+					<li>Item2</li>
+				</ul>
+			</div>
+
+			<a href="#">Second</a>
+			<div id="second" class="accordion-frame">
+				<ul class="accordion-content">
+					<li>Item3</li>
+					<li>Item4</li>
+					<li>Item5</li>
+					<li>Item6</li>
+				</ul>
+			</div>
+
+			<a href="#">Third</a>
+			<div id="third" class="accordion-frame">
+				<ul class="accordion-content">
+					<li>Item7</li>
+					<li>Item8</li>
+					<li>Item9</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<br>
+	<a href="tests.html">Go to unit tests</a>
+	
+</body>
+
+</html>

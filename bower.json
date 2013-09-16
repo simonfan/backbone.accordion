@@ -1,0 +1,13 @@
+{
+  "name": "backbone.accordion",
+  "version": "0.0.1",
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2",
+    "requirejs": "~2.1.8",
+    "_.asynch": "simonfan/_.asynch",
+    "backbone.statefulview": "simonfan/backbone.statefulview"
+  },
+  "main": "backbone.accordion.js"
+}
