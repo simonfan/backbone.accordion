@@ -8,12 +8,12 @@ define(['backbone.statefulview','underscore'], function(StatefulView, undef) {
 			this.frameSelector = options.frameSelector;
 		},
 
-		open: function(what) {
-			return this.swtch({ open: _.isArray(what) ? what : '.' });
+		open: function(what, axis, options, insist) {
+			return this.swtch({ open: _.isArray(what) || _.isString(what) ? what : '.' }, axis, options, insist);
 		},
 
-		close: function(what) {
-			return this.swtch({ close: _.isArray(what) ? what : '.' });
+		close: function(what, axis, options, insist) {
+			return this.swtch({ close: _.isArray(what) || _.isString(what) ? what : '.' }, axis, options, insist);
 		},
 
 		to: function(frames, axis, options, insist) {
