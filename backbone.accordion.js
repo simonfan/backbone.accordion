@@ -8,6 +8,14 @@ define(['backbone.statefulview','underscore'], function(StatefulView, undef) {
 			this.frameSelector = options.frameSelector;
 		},
 
+		open: function(what) {
+			return this.swtch({ open: _.isArray(what) ? what : '.' });
+		},
+
+		close: function(what) {
+			return this.swtch({ close: _.isArray(what) ? what : '.' });
+		},
+
 		to: function(frames, axis, options, insist) {
 			var frames = _.isArray(frames) ? frames : [ frames ],
 				closeSelector = this.frameSelector + ':not(' + frames.join(',') + ')';
